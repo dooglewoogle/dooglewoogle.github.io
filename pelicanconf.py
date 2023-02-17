@@ -7,7 +7,7 @@ TIMEZONE = 'Pacific/Auckland'
 DEFAULT_LANG = 'English'
 THEME = "dev-random"
 
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 
 TAGS_SAVE_AS = ''
 TAG_SAVE_AS = ''
@@ -33,12 +33,17 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 
 DEFAULT_PAGINATION = False
 CATEGORIES = False
+USE_FOLDER_AS_CATEGORY = True
+
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["lightbox", "image_process"]
+
+# for testing and regen purposes
+DELETE_OUTPUT_DIRECTORY = False
 
 IMAGE_PROCESS = {
     "thumb": {
